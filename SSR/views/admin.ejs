@@ -1,0 +1,32 @@
+<%- include("partial/navbar.ejs") %>
+
+
+<div class="mt-10">
+
+    
+  
+    
+
+    <ul class="flex flex-col gap-2 p-5">
+
+        <% userData.forEach(element => { %>
+            
+
+                <li class="p-2 w-fit bg-gray-200">
+                   Username: - <%= element.username %>
+                    <br>
+                   Email:- <%= element.email %>
+
+                </li>
+            
+        <% }) %>
+<!--        
+        <li class="p-2 w-fit bg-gray-200">Username:abhi1</li>
+        <li class="p-2 w-fit bg-gray-200">Username:abhi</li>
+        <li class="p-2 w-fit bg-gray-200">Username:abhi2</li>
+        <li class="p-2 w-fit bg-gray-200">Username:abhi3</li> -->
+      
+    </ul>
+</div>
+
+
